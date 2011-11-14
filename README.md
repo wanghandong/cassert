@@ -1,7 +1,10 @@
 C-style assert in Scala
 =======================
 This is a Scala 2.9 compiler plugin(**cassert.jar**) that supports C-style assert.
-for example, the following assert and require call in Main.scala:
+
+assert/require without the plugin
+----------------------------------
+for example, in the following code(Main.scala):
 <pre>
 object Main extends App 
 {
@@ -34,6 +37,9 @@ is running at production site.
 </pre>
 
 The same is true for the require method call.
+
+assert/require with the plugin
+------------------------------
 
 The cassert plugin would rewrite the assert or require method call and produce the following stacktrace:
 NOTE the error message has **file Main.scala, line 7:v1 > v2**
