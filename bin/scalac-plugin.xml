@@ -1,0 +1,4 @@
+<plugin>
+  <name>cassert</name>
+  <classname>com.sigma.cassert.CAssert</classname>
+</plugin>
