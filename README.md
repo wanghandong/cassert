@@ -1,6 +1,6 @@
 C-style assert in Scala
 =======================
-This is a Scala 2.9 compiler plugin(<bold>cassert.jar</bold>) that supports C-style assert.
+This is a Scala 2.9 compiler plugin(**cassert.jar**) that supports C-style assert.
 for example, the following assert and require call in Main.scala:
 <pre>
 object Main extends App 
@@ -36,10 +36,10 @@ is running at production site.
 The same is true for the require method call.
 
 The cassert plugin would rewrite the assert or require method call and produce the following stacktrace:
-NOTE the error message has <bold>file Main.scala, line 7:v1 > v2</bold>
+NOTE the error message has **file Main.scala, line 7:v1 > v2**
 
 
-Exception in thread "main" java.lang.AssertionError: assertion failed: <bold>file Main.scala, line 7:v1 > v2)</bold>
+Exception in thread "main" java.lang.AssertionError: assertion failed: **file Main.scala, line 7:v1 > v2)**
 <pre>	at scala.Predef$.assert(Predef.scala:103)
 	at Main$delayedInit$body.apply(Main.scala:7)
 	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
@@ -56,7 +56,7 @@ Exception in thread "main" java.lang.AssertionError: assertion failed: <bold>fil
 	
 Stack trace of the require call with the cassert plugin:
 
-Exception in thread "main" java.lang.IllegalArgumentException: requirement failed: <bold>file Main.scala, line 8:v3.length()<20)</bold>
+Exception in thread "main" java.lang.IllegalArgumentException: requirement failed: **file Main.scala, line 8:v3.length()<20)**
 <pre>	at scala.Predef$.require(Predef.scala:157)
 	at Main$delayedInit$body.apply(Main.scala:8)
 	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
