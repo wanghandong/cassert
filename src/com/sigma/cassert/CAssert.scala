@@ -106,7 +106,7 @@ class CAssert(val global: Global) extends Plugin {
         return buf.toString()
       }
 
-      if(true){
+      if(false){
         println(" =========== dump source file ========= ")
         unit.source.content.foreach(print)
         
