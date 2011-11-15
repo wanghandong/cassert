@@ -38,8 +38,9 @@ is running at production site.
 
 The same is true for the require method call.
 
+
 assert/require with the plugin
-------------------------------
+-------------------------------
 
 The cassert plugin would rewrite the assert or require method call and produce the following stacktrace:
 NOTE the error message has **file Main.scala, line 7:v1 > v2**
