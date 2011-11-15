@@ -1,6 +1,6 @@
 C-style assert in Scala
 =======================
-This is a Scala 2.9 compiler plugin(**cassert.jar**) that supports C-style assert.
+This is a Scala 2.9 compiler plugin(**target/cassert.jar**) that supports C-style assert.
 
 assert/require without the plugin
 ----------------------------------

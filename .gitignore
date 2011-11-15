@@ -1,1 +1,3 @@
-bin/com
+.cache
+bin/
+target/*/

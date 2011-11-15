@@ -203,7 +203,7 @@ class CAssert(val global: Global) extends Plugin {
                val nodeRange = new NodeRange(a1)
                val expr = "file "+unit.source.file.name +", line "+nodeRange.startLine +":"+   
                     getText(unit.source.content, nodeRange.startLine, nodeRange.startCol,
-                            nodeRange.endLine, nodeRange.endCol)
+                            nodeRange.endLine, nodeRange.endCol).trim()
                     
                println("rewrite "+node.getClass().getName() + " " + node.pos.line + ":" + node.pos.column + 
                        " " + node.toString()+" expr="+expr)
